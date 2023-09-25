@@ -41,4 +41,5 @@ sudo apt-get install -y curl \
                         librabbitmq-dev \
                         librdkafka-dev \
                         libboost-all-dev \
-                        libre2-dev
+                        libre2-dev \
+                        libcap-dev
