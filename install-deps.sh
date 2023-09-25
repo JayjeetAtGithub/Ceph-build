@@ -15,6 +15,7 @@ pip3 install Cython
 
 sudo apt-get install -y curl \
                         cmake \
+                        gperf \
                         ninja-build \
                         libibverbs-dev \
                         libudev-dev \
@@ -39,4 +40,3 @@ sudo apt-get install -y curl \
                         libicu-dev \
                         librabbitmq-dev \
                         librdkafka-dev
-
