@@ -39,4 +39,5 @@ sudo apt-get install -y curl \
                         libcap-ng-dev \
                         libicu-dev \
                         librabbitmq-dev \
-                        librdkafka-dev
+                        librdkafka-dev \
+                        libboost-all-dev
