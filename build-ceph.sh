@@ -10,6 +10,6 @@ git submodule update --init --recursive
 git checkout v18.2.0
 
 rm -rf build
-./do_cmake.sh
+ARGS="-DWITH_RDMA=OFF" ./do_cmake.sh
 cd build
 ninja
