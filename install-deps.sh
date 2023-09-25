@@ -5,11 +5,13 @@ sudo apt-get update
 sudo apt-get install -y python3-dev \
                         python3-pip \
                         python3-venv \
-                        python3-sphinx
+                        python3-sphinx \
+                        python3-routes
  
 pip3 install Cython
 
-sudo apt-get install -y cmake \
+sudo apt-get install -y curl \
+                        cmake \
                         ninja-build \
                         libibverbs-dev \
                         libudev-dev \
