@@ -9,7 +9,9 @@ sudo apt-get install -y python3-dev \
  
 pip3 install Cython
 
-sudo apt-get install -y libibverbs-dev \
+sudo apt-get install -y cmake \
+                        ninja-build \
+                        libibverbs-dev \
                         libudev-dev \
                         libblkid-dev \
                         libkeyutils-dev \
