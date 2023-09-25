@@ -40,4 +40,5 @@ sudo apt-get install -y curl \
                         libicu-dev \
                         librabbitmq-dev \
                         librdkafka-dev \
-                        libboost-all-dev
+                        libboost-all-dev \
+                        libre2-dev
