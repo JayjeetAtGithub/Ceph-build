@@ -12,4 +12,5 @@ git checkout v18.2.0
 rm -rf build
 ARGS="-DWITH_RDMA=OFF" ./do_cmake.sh
 cd build
-ninja
+ninja -j$(nproc)
+
