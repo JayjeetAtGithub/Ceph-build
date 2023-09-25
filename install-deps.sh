@@ -2,14 +2,14 @@
 set -e
 
 sudo apt-get update
-sudo apt-get install -y python-pip \ 
+sudo apt-get install -y python3-dev \ 
                         python3-pip \ 
-                        python3-venv
+                        python3-venv \
+                        python3-sphinx
  
 pip3 install Cython
 
-sudo apt-get install -y python3-sphinx \ 
-                        libibverbs-dev \ 
+sudo apt-get install -y libibverbs-dev \ 
                         libudev-dev \ 
                         libblkid-dev \ 
                         libkeyutils-dev \ 
