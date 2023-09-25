@@ -9,7 +9,7 @@ sudo apt-get install -y python3-dev \
                         python3-routes
 
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-sudo apt-get install -y gcc-11
+sudo apt-get install -y gcc-11 g++-11 g++-13
 
 pip3 install Cython
 
