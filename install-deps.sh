@@ -7,7 +7,10 @@ sudo apt-get install -y python3-dev \
                         python3-venv \
                         python3-sphinx \
                         python3-routes
- 
+
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo apt-get install -y gcc-11
+
 pip3 install Cython
 
 sudo apt-get install -y curl \
