@@ -9,8 +9,10 @@ cd ceph
 git submodule update --init --recursive
 git checkout v18.2.0
 
+./install-deps.sh
+sudo apt install cmake libboost-all-dev
+
 rm -rf build
-ARGS="-DWITH_RDMA=OFF" ./do_cmake.sh
+ ./do_cmake.sh
 cd build
 ninja -j$(nproc)
-
