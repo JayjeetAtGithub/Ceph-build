@@ -10,7 +10,7 @@ git submodule update --init --recursive
 git checkout v18.2.0
 
 ./install-deps.sh
-sudo apt install cmake libboost-all-dev
+sudo apt install -y cmake g++-13 libboost-all-dev
 
 rm -rf build
  ./do_cmake.sh
