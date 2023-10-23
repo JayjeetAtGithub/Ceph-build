@@ -15,7 +15,7 @@ exec_cmd() {
         return
     fi
 
-    ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i $1 $2
+    ssh -o StrictHostKeyChecking=no $1 $2
 }
 
 # install cephadm on hosts
