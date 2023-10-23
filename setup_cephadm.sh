@@ -11,7 +11,7 @@ exec_cmd() {
 
     hostname=$(hostname -s)
     if [ "$hostname" == "$1" ]; then
-        bash $2
+        $2
         return
     fi
 
