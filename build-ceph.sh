@@ -8,8 +8,8 @@ if [ ! -d "ceph" ]; then
 fi
 
 cd ceph
-git submodule update --init --recursive
 git checkout v17.2.0-oas
+git submodule update --init --recursive
 
 sudo apt-get update
 ./install-deps.sh
