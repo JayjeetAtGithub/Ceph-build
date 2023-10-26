@@ -7,7 +7,7 @@ fi
 
 cd ceph
 git submodule update --init --recursive
-git checkout v18.2.0
+git checkout v17.2.0
 
 ./install-deps.sh
 sudo apt install -y cmake g++-13 libboost-all-dev
