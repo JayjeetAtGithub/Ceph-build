@@ -3,10 +3,10 @@ set -ex
 
 mkdir -p /mnt/cephfs/dataset
 
-# download a 200MB file
-wget http://ipv4.download.thinkbroadband.com/200MB.zip -O 200MB.zip
+# download a test file
+wget http://link.testfile.org/150MB -O test.zip
 
 # copy the file 100 times into /mnt/cephfs/dataset
 for i in {1..100}; do
-    cp 200MB.zip /mnt/cephfs/dataset/200MB-$i.zip
+    cp test.zip /mnt/cephfs/dataset/test-$i.zip
 done
