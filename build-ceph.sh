@@ -4,12 +4,12 @@ set -ex
 # debug build
 
 if [ ! -d "ceph" ]; then
-    git clone https://github.com/ceph/ceph.git
+    git clone https://github.com/JayjeetAtGithub/ceph.git
 fi
 
 cd ceph
 git submodule update --init --recursive
-git checkout v17.2.0
+git checkout v17.2.0-oas
 
 ./install-deps.sh
 ./run-make-check.sh
