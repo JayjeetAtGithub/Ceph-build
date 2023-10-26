@@ -1,7 +1,9 @@
 #!/bin/bash
 set -eu
 
-mkfs.ext4 -L data /dev/nvme0n1
+blkdev=$1
+
+mkfs.ext4 -L data ${blkdev}
 mkdir -p /mnt/data
-mount -o defaults /dev/nvme0n1 /mnt/data
+mount -o defaults ${blkdev} /mnt/data
 cd /mnt/data
