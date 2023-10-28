@@ -4,7 +4,7 @@ set -ex
 mkdir -p /mnt/cephfs/dataset
 
 # download a test file
-if [ ! -d "test.zip" ]; then
+if [ ! -f "test.zip" ]; then
     wget http://link.testfile.org/150MB -O test.zip
 fi
 
