@@ -9,6 +9,7 @@ if [ ! -f "test.zip" ]; then
 fi
 
 # copy the file 100 times into /mnt/cephfs/dataset
-for i in {1..100}; do
-    cp test.zip /mnt/cephfs/dataset/test-$i.zip
+for i in {1..1000}; do
+    UUID=$(cat /proc/sys/kernel/random/uuid)
+    cp test.zip /mnt/cephfs/dataset/test-$UUID.zip
 done
