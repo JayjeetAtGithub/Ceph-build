@@ -16,4 +16,6 @@ cp keyring /etc/ceph/keyring
 ./bin/ceph osd pool create cephfs_metadata 32 32 replicated
 ./bin/ceph fs new cephfs cephfs_metadata cephfs_data
 mkdir -p /mnt/cephfs
+
+sleep 5
 ceph-fuse /mnt/cephfs
