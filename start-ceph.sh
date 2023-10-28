@@ -10,6 +10,8 @@ cp ceph.conf /etc/ceph/ceph.conf
 cp keyring /etc/ceph/keyring
 ./bin/ceph -s
 ./bin/rados df
+
+# init cephfs
 ./bin/ceph osd pool create cephfs_data 32 32 replicated
 ./bin/ceph osd pool create cephfs_metadata 32 32 replicated
 ./bin/ceph fs new cephfs cephfs_metadata cephfs_data
