@@ -16,3 +16,6 @@ cd ceph/build
 
 wipefs -af ${blkdev}
 dd if=/dev/zero of=${blkdev} bs=1M count=1
+
+rm -rf /etc/ceph/ceph.conf
+rm -rf /etc/ceph/keyring
