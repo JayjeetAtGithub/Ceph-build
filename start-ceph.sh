@@ -8,6 +8,8 @@ ninja vstart
 MON=1 OSD=1 MDS=1 MGR=1 ../src/vstart.sh --debug --new -x --localhost --bluestore --bluestore-devs ${blkdev}
 
 mkdir -p /etc/ceph
+mkdir -p /var/run/ceph/rbd-clients
+
 cp ceph.conf /etc/ceph/ceph.conf
 cp keyring /etc/ceph/keyring
 ./bin/ceph -s
