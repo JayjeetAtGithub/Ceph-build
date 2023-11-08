@@ -21,3 +21,5 @@ rm -rf build
 ./do_cmake.sh -DWITH_RDMA=OFF -DWITH_RBD=OFF -DWITH_KRBD=OFF -DWITH_RADOSGW=OFF -DWITH_MANPAGE=OFF -DWITH_BABELTRACE=OFF -DWITH_MGR_DASHBOARD_FRONTEND=OFF
 cd build
 ninja -j$(nproc)
+mkdir -p /mnt/data/ceph-build/ceph/src/pybind/mgr/dashboard/frontend/dist
+ninja install
