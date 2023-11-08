@@ -20,4 +20,4 @@ cp keyring /etc/ceph/keyring
 mkdir -p /mnt/cephfs
 
 sleep 5
-ceph-fuse /mnt/cephfs
+./bin/ceph-fuse /mnt/cephfs
