@@ -19,5 +19,5 @@ cp keyring /etc/ceph/keyring
 ./bin/ceph fs new cephfs cephfs_metadata cephfs_data
 mkdir -p /mnt/cephfs
 
-sleep 5
+sleep 10
 ./bin/ceph-fuse /mnt/cephfs
