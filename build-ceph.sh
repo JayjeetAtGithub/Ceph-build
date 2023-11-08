@@ -22,6 +22,6 @@ rm -rf build
 cd build
 ninja -j$(nproc)
 
-cp bin/ceph /usr/bin/ceph
-cp bin/ceph-fuse /usr/bin/ceph-fuse
-cp bin/rados /usr/bin/rados
+cp bin/ceph /usr/local/bin/ceph
+cp bin/ceph-fuse /usr/local/bin/ceph-fuse
+cp bin/rados /usr/local/bin/rados
